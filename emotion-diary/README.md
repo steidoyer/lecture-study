@@ -2,7 +2,7 @@
 
 [강의 링크](https://www.udemy.com/course/winterlood-react-basic/)
 
-## 프로젝트
+## 예제 프로젝트
 
 ### 감정 일기장
 
@@ -10,5 +10,7 @@
 
 1. node 버전 세팅
    `node v22.15.0`
-2. 패키지 설치
-   `npm install`
+2. React 프로젝트 생성
+   `$ npm create vite@latest`
+3. 새로 생성된 프로젝트의 package.json에 react-router-dom 사용을 위해 `"react-router-dom": "^7.6.2"` 추가 후 설치
+   `$ npm install`
