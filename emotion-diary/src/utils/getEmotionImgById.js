@@ -4,7 +4,7 @@ import emotion3 from "../assets/img/emotion3.png";
 import emotion4 from "../assets/img/emotion4.png";
 import emotion5 from "../assets/img/emotion5.png";
 
-export const getEmotionImgById = (emotionId) => {
+const getEmotionImgById = (emotionId) => {
   const targetEmotionId = String(emotionId);
   switch (targetEmotionId) {
     case "1":
@@ -22,18 +22,4 @@ export const getEmotionImgById = (emotionId) => {
   }
 };
 
-export const getFormattedDate = (targetDate) => {
-  let year = targetDate.getFullYear();
-  let month = targetDate.getMonth() + 1;
-  let date = targetDate.getDate();
-
-  if (month < 10) {
-    month = `0${month}`;
-  }
-
-  if (date < 10) {
-    date = `0${date}`;
-  }
-
-  return `${year}-${month}-${date}`;
-};
+export default getEmotionImgById;
